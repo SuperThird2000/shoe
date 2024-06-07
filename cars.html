@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent-a-Car - Cars</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <header>
+        <h1>Rent-a-Car</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cars.html">Cars</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="car-list">
+            <h2>Available Cars</h2>
+            <div class="car-item">
+                <img src="honda.jpg" alt="Car 1">
+                <div class="details">
+                    <h3>Honda Civic Type-R</h3>
+                    <p>The Honda Civic Type R is a high-performance variant of the Honda Civic known for its turbocharged engine, aggressive styling, and track-ready capabilities. With precise handling and a driver-focused cockpit, it offers an exhilarating driving experience favored by enthusiasts.</p>
+                    <button onclick="rentCar('Car 1')">Rent</button>
+                </div>
+            </div>
+            <div class="car-item">
+                <img src="toyota.png" alt="Car 2">
+                <div class="details">
+                    <h3>Toyota Camry</h3>
+                    <p>The Toyota Camry is a reliable and popular midsize sedan known for its comfortable ride, fuel efficiency, and spacious interior. It combines practicality with a smooth driving experience, making it a top choice for families and commuters alike.</p>
+                    <button onclick="rentCar('Car 2')">Rent</button>
+                </div>
+            </div>
+            <!-- Add more cars as needed -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Rent-a-Car</p>
+    </footer>
+
+    <script>
+        function rentCar(carName) {
+            alert('You have rented ' + carName);
+            // Here you can implement further functionality, such as updating a database or displaying a confirmation message
+        }
+    </script>
+</body>
+</html>
